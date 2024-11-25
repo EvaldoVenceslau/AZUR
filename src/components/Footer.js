@@ -12,9 +12,9 @@ function Footer() {
             <div className="footer-content">
                 <div className="contact-info">
                     <div className="social-icons">
-                        <a href="/azur-app/src/img/facebook-icon.png"><img src={facebookIcon} alt="Facebook" /></a>
-                        <a href="/azur-app/src/img/instagram-icon.png"><img src={instagramIcon} alt="Instagram" /></a>
-                        <a href="/azur-app/src/img/linkedin-icon.png"><img src={linkedinIcon} alt="LinkedIn" /></a>
+                        <a href="https://www.facebook.com/azur.com.br"><img src={facebookIcon} alt="Facebook" /></a>
+                        <a href="https://www.instagram.com/azur.com.br/"><img src={instagramIcon} alt="Instagram" /></a>
+                        <a href="https://www.linkedin.com/company/azur-com-br/"><img src={linkedinIcon} alt="LinkedIn" /></a>
                     </div>
                     <p className="phone">+55 (87) 9 8168-8903</p>
                     <address>
@@ -27,8 +27,7 @@ function Footer() {
                 </div> */}
                 <div>
                     <div className="footer-img">
-                        <img 
-                        src={logo}/>
+                        <img src={logo}/>
                     </div>
                 </div>
             </div>

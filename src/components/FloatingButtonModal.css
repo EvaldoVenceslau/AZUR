@@ -2,94 +2,149 @@
 
 /* Botão Flutuante */
 .floating-button {
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    padding: 15px;
-    background-color: #000;
-    color: #fff;
-    border: none;
-    border-radius: 50%;
-    cursor: pointer;
-    font-size: 18px;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
-  }
-  
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  padding: 20px; /* Aumenta o tamanho para garantir que o botão fique circular */
+  background-color: #61dafb; /* Cor ajustada para combinar com o site */
+  color: #000000;
+  border: none;
+  border-radius: 50%; /* Torna o botão circular */
+  cursor: pointer;
+  font-size: 24px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  transition: background-color 0.3s ease;
+}
 
-  .modal-overlay {
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-color: rgba(0, 0, 0, 0.5);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  .modal-content {
-    background-color: #f9f9f9;
-    padding: 20px;
-    border-radius: 8px;
-    width: 90%;
-    max-width: 400px;
-    position: relative;
-    text-align: center;
-  }
-  
-  .close-button {
-    position: absolute;
-    top: 10px;
-    right: 10px;
-    background: transparent;
-    border: none;
-    font-size: 18px;
-    cursor: pointer;
-  }
-  
+.floating-button:hover {
+  background-color: #365F96; /* Tom mais escuro ao passar o mouse */
+}
 
-  .form {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
+/* Modal de sobreposição */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: opacity 0.3s ease;
+}
+
+/* Modal Content */
+.modal-content {
+  background-color: rgba(255, 255, 255, 0.2); /* Cor semi-transparente para simular o vidro */
+  padding: 30px;
+  border-radius: 12px;
+  width: 90%;
+  max-width: 450px;
+  position: relative;
+  text-align: center;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(10px); /* Aplica o desfoque ao fundo */
+  -webkit-backdrop-filter: blur(10px); /* Necessário para o Safari */
+  animation: fadeIn 0.3s ease-in-out;
+}
+
+/* Close button */
+.close-button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: transparent;
+  border: none;
+  font-size: 24px;
+  color: #999;
+  cursor: pointer;
+  transition: color 0.2s ease;
+}
+
+.close-button:hover {
+  color: #61dafb; /* Cor do botão flutuante */
+}
+
+/* Form */
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  align-items: center;
+}
+
+label {
+  font-weight: bold;
+  font-size: 16px;
+  color: #000000;
+}
+
+input[type="text"] {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  width: 100%;
+  font-size: 16px;
+  transition: border-color 0.3s ease;
+}
+
+input[type="text"]:focus {
+  border-color: #4267B0; /* Cor ao focar no campo */
+  outline: none;
+}
+
+/* Captcha */
+.captcha {
+  margin: 15px 0;
+  background-color: #f4f4f4;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Submit Button */
+.submit-button {
+  background-color: #000000;
+  color: #fff;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+.submit-button:hover {
+  background-color: #365F96; /* Tom mais escuro ao passar o mouse */
+}
+
+/* Buttons inside options */
+.options-container button {
+  margin: 12px;
+  padding: 12px 24px;
+  border: none;
+  background-color: #000000;
+  color: #fff;
+  cursor: pointer;
+  border-radius: 6px;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+.options-container button:hover {
+  background-color: #365F96; /* Tom mais escuro ao passar o mouse */
+}
+
+/* Animação de fadeIn para o modal */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
   }
-  
-  label {
-    font-weight: bold;
+  to {
+    opacity: 1;
   }
-  
-  input[type="text"] {
-    padding: 8px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-  }
-  
-  .captcha {
-    margin: 10px 0;
-    background-color: #e0e0e0;
-    height: 50px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-  
-  .submit-button {
-    background-color: #000;
-    color: #fff;
-    border: none;
-    padding: 10px;
-    border-radius: 4px;
-    cursor: pointer;
-  }
-  
-  .options-container button {
-    margin: 10px;
-    padding: 10px 20px;
-    border: none;
-    background-color: #000;
-    color: #fff;
-    cursor: pointer;
-    border-radius: 4px;
-  }
-  
+}

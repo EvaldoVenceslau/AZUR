@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { FaRegHandshake } from 'react-icons/fa'; // Ícone de mãos apertadas
 import './FloatingButtonModal.css'; // Importa o CSS para estilização
 
 function FloatingButtonModal() {
@@ -17,9 +18,9 @@ function FloatingButtonModal() {
 
   return (
     <div>
-      {/* Botão Flutuante */}
+      {/* Botão Flutuante com ícone de mãos apertadas */}
       <button className="floating-button" onClick={() => setIsOpen(!isOpen)}>
-        Solicitar
+        <FaRegHandshake size={24} /> {/* Ícone de mãos apertadas */}
       </button>
 
       {/* Modal */}
