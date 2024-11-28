@@ -7,16 +7,16 @@ import ma3 from '../img/ma3.png';
 
 const maue = () => {
   const marcarVisita = () => {
-    alert('Opção de marcar visita para Mauá ainda não implementada.');
+    alert('Opção de marcar visita para Mauê ainda não implementada.');
   };
 
   const adquirirUnidade = () => {
-    alert('Opção de adquirir unidade para Mauá ainda não implementada.');
+    alert('Opção de adquirir unidade para Mauê ainda não implementada.');
   };
 
   return (
     <div className="maue-container">
-      <div className="maue-header">Empreendimento Mauá</div>
+      <div className="maue-header">Empreendimento Mauê</div>
       <div className="maue-description">
         <p>
           O empreendimento Mauá combina elegância e sustentabilidade, localizado em um bairro tranquilo
