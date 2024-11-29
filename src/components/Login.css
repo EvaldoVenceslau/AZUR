@@ -1,0 +1,92 @@
+/* Estilo principal da página */
+.login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Preenche a altura da janela */
+    background: linear-gradient(135deg, #89cff0, #4267b0); /* Fundo degradê */
+}
+
+/* Caixa de login */
+.login-box {
+    background: rgba(255, 255, 255, 0.2); /* Transparência estilo vidro */
+    backdrop-filter: blur(10px); /* Efeito de desfoque */
+    -webkit-backdrop-filter: blur(10px);
+    border-radius: 15px; /* Bordas arredondadas */
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    padding: 30px;
+    width: 350px;
+    color: #fff; /* Texto branco */
+    text-align: center;
+    border: 1px solid rgba(255, 255, 255, 0.2); /* Borda translúcida */
+}
+
+/* Título do login */
+.login-box h2 {
+    margin-bottom: 20px;
+    font-size: 24px;
+    font-weight: 600;
+    color: #ffffff;
+}
+
+/* Grupo de inputs */
+.input-group {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+/* Rótulo dos inputs */
+.input-group label {
+    display: block;
+    font-size: 14px;
+    margin-bottom: 5px;
+    color: #eaeaea;
+}
+
+/* Campos de texto */
+.input-group input {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.5); /* Fundo translúcido */
+    color: #333;
+    font-size: 14px;
+    outline: none;
+    transition: 0.3s;
+}
+
+/* Foco nos campos */
+.input-group input:focus {
+    background: rgba(255, 255, 255, 0.8);
+    box-shadow: 0 0 5px rgba(255, 255, 255, 0.5);
+}
+
+/* Botão de login */
+.login-button {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    border-radius: 10px;
+    background: linear-gradient(135deg, #df2f80, #4267b0); /* Degradê no botão */
+    color: #fff;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+/* Hover no botão */
+.login-button:hover {
+    background: linear-gradient(135deg, #4267b0, #df2f80);
+    box-shadow: 0 4px 10px rgba(255, 255, 255, 0.5);
+}
+
+/* Mensagem de erro */
+.error-message {
+    color: #ff4d4d;
+    font-size: 14px;
+    margin-top: -10px;
+    margin-bottom: 15px;
+    text-align: left;
+}

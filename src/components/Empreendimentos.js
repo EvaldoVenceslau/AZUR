@@ -16,7 +16,7 @@ const Empreendimentos = () => {
         <section className="empreendimentos-section">
             <h2>Empreendimentos</h2>
             <div className="empreendimentos-list">
-                {/* Empreendimento Mauá */}
+                {/* Empreendimento MauÊEe */}
                 <div onClick={() => navigate('/maue')} style={{ cursor: 'pointer' }}>
                     <Empreendimento 
                         imagem={MaueImg} 

@@ -5,9 +5,10 @@ import Header from './components/Header';
 import Footer from './components/Footer';
 import Empreendimentos from './components/Empreendimentos';
 import Oleiro from './components/Oleiro';
-import Maue from './components/Maue'; // Importa a página Mauá
-import Reserva from './components/Reserva'; // Importa a página Reserva das Palmeiras
-import FloatingButtonModal from './components/FloatingButtonModal'; // Botão flutuante com modal
+import Maue from './components/Maue';
+import Reserva from './components/Reserva';
+import Login from './components/Login'; // Importa a página de login
+import FloatingButtonModal from './components/FloatingButtonModal';
 
 function App() {
     return (
@@ -19,6 +20,7 @@ function App() {
                     <Route path="/oleiro" element={<Oleiro />} />
                     <Route path="/maue" element={<Maue />} />
                     <Route path="/reserva" element={<Reserva />} />
+                    <Route path="/login" element={<Login />} /> {/* Rota de Login */}
                 </Routes>
                 <Footer />
                 <FloatingButtonModal />
